@@ -228,8 +228,8 @@ place-items: center;
     box-shadow: 4px 4px 5px #299329;
     display: flex;
     align-items: center;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
     gap: 30px;
 }
 .Products .product-container::-webkit-scrollbar{
