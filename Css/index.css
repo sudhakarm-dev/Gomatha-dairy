@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 a{
     text-decoration: none;
@@ -55,25 +55,29 @@ span{
     position: fixed;
     top: 20px;
     right: 20px;
-    height: 15vh;
+    height: 12vh;
     width: 90%;
     z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: whitesmoke;
     border-radius: 10px;
-    overflow: hidden;
-}
-
-.home .navbar{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 1fr ;
     grid-template-areas: "logo CTA-btn-one"
-                        "nav nav";
+                        " nav nav ";
 }
+
 .home .navbar .logo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+}
+.home .navbar .nav{
     height: 100%;
     width: 100%;
     display: flex;
@@ -81,27 +85,18 @@ span{
     align-items: center;
 }
 .home .navbar .nav .navlist{
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    background-color: red;
+    border-radius: 40px;
+    border: 2px solid #0066FF;
+    width: 40%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 24px;
+    font-size: 18px;
     color: #0066FF;
     text-shadow: 2px 2px 2px #359435;
-    transition: transform 0.5s ease;
-    overflow: hidden;
+    overflow-x: hidden;
 }
-/* .home .navbar .nav .navlist li{
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-.home .navbar .nav .navlist li.active{
-    font-weight: bold;
-}
+
 .home .navbar .CTA-btn-one{
     height: 100%;
     width: 100%;
