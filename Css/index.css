@@ -38,7 +38,6 @@ span{
     background-image: url(../Assets/images/image.png);
     background-position: bottom;
     background-repeat: no-repeat;
-    /* background-size: contain; */
 }
 .home::before{
     content: "";
@@ -55,38 +54,34 @@ span{
     position: fixed;
     top: 20px;
     right: 20px;
-    height: 12vh;
+    height: 80px;
     width: 90%;
-    z-index: 100;
+    z-index: 20;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: whitesmoke;
     border-radius: 10px;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2fr 1fr ;
+    grid-template-rows: 60px 30px ;
     grid-template-areas: "logo CTA-btn-one"
                         " nav nav ";
+    row-gap: 6px;
 }
 
 .home .navbar .logo{
-    height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: pink;
 }
 .home .navbar .nav{
-    height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .home .navbar .nav .navlist{
-    height: 50%;
-    background-color: red;
+    height: 25px;
     border-radius: 40px;
     border: 2px solid #0066FF;
     width: 40%;
@@ -94,7 +89,7 @@ span{
     font-size: 18px;
     color: #0066FF;
     text-shadow: 2px 2px 2px #359435;
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .home .navbar .CTA-btn-one{
@@ -117,7 +112,7 @@ span{
     cursor: pointer;
 }
 .home .home_nav{
-    height: 35vh;
+    height: 280px;
     width: 100%;
     position: absolute;
     top: 60%;
@@ -125,9 +120,6 @@ span{
     transform: translate(-50%, -50%);
     z-index: 10;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .home .home_nav .nav-items{
@@ -135,7 +127,7 @@ span{
     height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5 ,1fr);
+    grid-template-rows: repeat(5 ,56px);
     grid-template-areas: " heading-1 heading-1"
                             "heading-2 heading-2"
                             "heading-3 heading-3"
@@ -145,22 +137,35 @@ place-items: center;
 }
 
 .home .home_nav .nav-items .heading-1{
-    text-align: center;
     font-size: 24px;
     width: 70%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .home .home_nav .nav-items .heading-2{
+    height: 56px;
     text-align: center;
     font-size: 20px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .home .home_nav .nav-items .heading-3{
+    height: 56px;
     text-align: center;
     font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .home .home_nav .nav-items .button-1{
+    height: 56px;
     font-size: 18px;
     height: 35px;
     width: 140px;
@@ -171,9 +176,13 @@ place-items: center;
     font-weight: bold;
     text-transform: capitalize;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .home .home_nav .nav-items .button-2{
+    height: 56px;
     font-size: 18px;
     height: 35px;
     width: 140px;
@@ -184,6 +193,9 @@ place-items: center;
     font-weight: bold;
     text-transform: capitalize;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .CTA-btn-two{
@@ -213,6 +225,7 @@ place-items: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    background-color: red;
 }
 .Products .heading-2{
     text-transform: capitalize;
@@ -221,11 +234,9 @@ place-items: center;
     color: #299329;
 }
 .Products .product-container{
-    height: 400px;
-    width: 230px;
+    height: 350px;
+    width: 100%;
     background-color: whitesmoke;
-    border-radius: 10px;
-    box-shadow: 4px 4px 5px #299329;
     display: flex;
     align-items: center;
     overflow-y: scroll;
@@ -245,6 +256,10 @@ place-items: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
+}
+.Products .product-container div > button{
+    height: 50px;
+    width: 180px;
 }
 
 .about-us{
